@@ -25,7 +25,7 @@ resource "aws_instance" "app_server" {
   user_data = "${data.template_file.ec2_user_data.template}"
 
   tags = {
-    Name = "WebServer2"
+    Name = "WebServer100"
   }
 }
 
