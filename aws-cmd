@@ -1,0 +1,4 @@
+aws ec2 run-instances \                                     
+              --image-id ami-0ac43988dfd31ab9a \
+              --instance-type t2.micro \
+              --key-name test1000
