@@ -19,10 +19,10 @@ resource "aws_instance" "web_server" {
   instance_type          = var.instance_type
   key_name               = var.ssh_key
   vpc_security_group_ids = [aws_security_group.web_server_sg.id]
-  count                  =  2
+  count                  = 2
 
   tags = {
-    Name =  "${var.tag_name} ${count.index}"
+    Name = "${var.tag_name} ${count.index}"
   }
 }
 
