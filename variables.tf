@@ -8,7 +8,7 @@ variable "instance_type" {
 }
 
 variable "tag_name" {
-  default = "Real_Web_Server"
+  default = "Apache Web Server"
 }
 
 variable "bucket" {
